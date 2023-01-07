@@ -9,7 +9,7 @@ contract FeeCollector {
         owner = msg.sender;
     }
 
-    // when the contract receives eth, add that amount tot the balance
+    // when the contract receives eth, add that amount to the balance
     receive() payable external{
         balance += msg.value;
     }
